@@ -7,9 +7,8 @@ def find_max_profit(prices):
 
         if current_profit > max_profit:
             max_profit = current_profit
-            print("sell price ", prices[i])
-            print("buy price ", lowest)
-            print("max_profit ", max_profit)
+            # print("sell price ", prices[i])
+            # print("buy price ", lowest)
 
         if prices[i] < lowest:
             lowest = prices[i]
@@ -24,4 +23,6 @@ stock_prices = [
     [1, 2, 3, 4, 5]]
 
 for stock_price in stock_prices:
-    find_max_profit(stock_price)
+    print("\n")
+    max_profit = find_max_profit(stock_price)
+    print("max_profit ", max_profit)
